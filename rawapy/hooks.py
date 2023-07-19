@@ -7,6 +7,10 @@ app_description = "this app for Rawaby rashed alhaweda factory"
 app_email = "rashed.alqdi@slnee.com"
 app_license = "MIT"
 
+
+doctype_js={
+"Customer": "public/js/customer_common.js",
+}
 # Includes in <head>
 # ------------------
 
