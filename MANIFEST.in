@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include rawapy *.css
+recursive-include rawapy *.csv
+recursive-include rawapy *.html
+recursive-include rawapy *.ico
+recursive-include rawapy *.js
+recursive-include rawapy *.json
+recursive-include rawapy *.md
+recursive-include rawapy *.png
+recursive-include rawapy *.py
+recursive-include rawapy *.svg
+recursive-include rawapy *.txt
+recursive-exclude rawapy *.pyc
