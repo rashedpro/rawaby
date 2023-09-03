@@ -11,6 +11,15 @@ app_license = "MIT"
 doctype_js={
 "Customer": "public/js/customer_common.js",
 }
+
+
+doc_events = {
+	"Sales Invoice": {
+		"on_submit": "rawapy.rawapy.common.sales_invoice_common.make_sales_invocie",
+	}
+}
+
+
 # Includes in <head>
 # ------------------
 
