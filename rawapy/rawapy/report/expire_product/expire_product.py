@@ -53,4 +53,6 @@ def get_sales_invoice(filters):
 					  			si.is_return=1 
 					  		and
 					  			si.owner="{0}"
+							and 
+					  			si.docstatus=1
 	""".format(filters.get("user")),as_dict=True)
