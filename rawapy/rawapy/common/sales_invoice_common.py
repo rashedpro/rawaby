@@ -2,7 +2,7 @@ import frappe
 
 
 def make_sales_invocie(doc,method):
-    if doc.is_return:
+    if doc.is_return and doc.reason_for_return!="Normal Returns":
         data = frappe.new_doc("Stock Entry")
         data.stock_entry_type="Material Issue"
         data.purpose="Material Issue"
