@@ -16,7 +16,9 @@ doctype_js={
 doc_events = {
 	"Sales Invoice": {
 		"on_submit": "rawapy.rawapy.common.sales_invoice_common.make_sales_invocie",
-	}
+	},
+    "Customer":{
+        "before_save":"rawapy.rawapy.common.customer_common.set_customer_code"}
 }
 
 
