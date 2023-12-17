@@ -21,16 +21,17 @@
    "unique": 1
   },
   {
+   "default": "A",
    "fieldname": "code",
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Code",
-   "read_only": 1
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2023-12-17 14:11:36.617766",
+ "modified": "2023-12-17 16:12:29.752238",
  "modified_by": "Administrator",
  "module": "Rawapy",
  "name": "Channels",
