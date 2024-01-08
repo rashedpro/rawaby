@@ -3,6 +3,7 @@ import frappe
 
 def make_sales_invocie(doc,method):
     if doc.is_return and doc.reason_for_return!="Normal Returns":
+        custom_settings=frappe.get_doc("Custom Settings")
         data = frappe.new_doc("Stock Entry")
         data.stock_entry_type="Material Issue"
         data.purpose="Material Issue"
@@ -13,6 +14,7 @@ def make_sales_invocie(doc,method):
                         "qty": abs(item.qty),
                         "uom": item.uom,
                         "s_warehouse":item.warehouse,
+                        "expense_account":custom_settings.sales_invoice_return_expense_account
                     })
         if (hasattr(data, "items")):
             data.insert()
